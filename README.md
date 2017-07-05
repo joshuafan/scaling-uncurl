@@ -2,9 +2,9 @@
 
 This repository contains code to experiment with two possible approaches to scale up non-negative sampled matrix factorization:
 
-1. Julia NMF (see chapter 9 of https://web.stanford.edu/~boyd/papers/pdf/glrm.pdf ). This uses proximal gradient descent. (<a href="https://github.com/madeleineudell/LowRankModels.jl">code</a>)
+1. <a href="https://github.com/madeleineudell/LowRankModels.jl">Julia NMF</a> (see chapter 9 of https://web.stanford.edu/~boyd/papers/pdf/glrm.pdf). This uses proximal gradient descent.
 
-2. Parallel Latent Dirichlet Allocation (<a href="http://openbigdatagroup.github.io/plda/">code</a>) 
+2. <a href="http://openbigdatagroup.github.io/plda/">Parallel Latent Dirichlet Allocation</a>
 
 <b>Paper:</b> PLDA+: Parallel Latent Dirichlet Allocation with Data Placement and Pipeline Processing. Zhiyuan Liu, Yuzhou Zhang, Edward Y. Chang, Maosong Sun. ACM Transactions on Intelligent Systems and Technology, special issue on Large Scale Machine Learning. 2011.
 
@@ -16,7 +16,7 @@ To my knowledge, PLDA needs to be run on Linux.
 
 2. Install PLDA (follow <a href="http://openbigdatagroup.github.io/plda/">these instructions</a>)
 
-3. Download the <a href="https://julialang.org/downloads/">Julia programming langauge</a>. You will need to add the Julia installation to the PATH environment variable (see <a href="https://julialang.org/downloads/platform.html">instructions</a>)
+3. Download the <a href="https://julialang.org/downloads/">Julia programming language</a>. You will need to add the Julia installation to the PATH environment variable (see <a href="https://julialang.org/downloads/platform.html">instructions</a>)
 
 <h2>About the code</h2>
 
