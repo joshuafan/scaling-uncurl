@@ -1,6 +1,5 @@
 <h1>Scaling up UNCURL</h1>
 
-<h2>About</h2>
 This repository contains code to experiment with two possible approaches to scale up non-negative sampled matrix factorization:
 
 1. Julia NMF (see chapter 9 of https://web.stanford.edu/~boyd/papers/pdf/glrm.pdf ). This uses proximal gradient descent. (<a href="https://github.com/madeleineudell/LowRankModels.jl">code</a>)
@@ -39,4 +38,4 @@ To my knowledge, PLDA needs to be run on Linux.
 
 To run Julia NMF: uncomment "Pkg.add()" statements the first time. If desired, adjust how the data matrix is initialized, and edit the file name of the PLDA file generated from the data. Then, "julia nmf.jl" can be run.
 
-To run PLDA: Make sure the input file has been created (using nmf.jl first). Then, follow <a href="http://openbigdatagroup.github.io/plda/"> these instructions</a> to run PLDA, making sure to adjust the number of topics and the input/output file names. Finally, make sure that the file names referenced in "plda.jl" are correct, and run "julia plda.jl".
+To run PLDA: Make sure the input file has been created (using nmf.jl first). Then, follow <a href="http://openbigdatagroup.github.io/plda/"> these instructions</a> to run PLDA. (Remember to adjust the number of topics and the input/output file names.) Finally, make sure that the file names referenced in "plda.jl" are correct, and run "julia plda.jl".
