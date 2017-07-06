@@ -22,10 +22,11 @@ r,c,k = 1000,100,5
 # There are a few options for obtaining the initial data matrix.
 
 # 1. Read from mat file
-# file = matopen("Zeisel_data.mat")
-# file = matopen("SyntheticLinear.mat")
-# vars = matread("Zeisel_data.mat")
+# file = matopen("data/Zeisel_data.mat")
+# vars = matread("data/Zeisel_data.mat")
 # println(vars)
+
+# file = matopne(data/SyntheticLinear.mat")
 # D = read(file, "Dat")
 # close(file)
 
@@ -42,7 +43,7 @@ println("Rank: $(k)")
 
 
 # From the data matrix, create a PLDA input file.
-create_plda_file(D, "small_input.txt")
+create_plda_file(D, "data/small_input.txt")
 println("file created")
 
 # Use our own custom "Poisson sampling loss"

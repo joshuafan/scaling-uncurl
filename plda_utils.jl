@@ -10,7 +10,7 @@ function create_plda_file(matrix, file)
     lines = IOBuffer()
     for i = 1:c
       for j = 1:r
-        print(lines, "G$j $(convert(Int64, matrix[j,i])) ")
+        print(lines, "G$(lpad(j, 5, 0)) $(convert(Int64, matrix[j,i])) ")
       end
       print(lines, "\n")
       #takebuf_string(line)
