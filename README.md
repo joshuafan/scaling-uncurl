@@ -6,7 +6,10 @@ This repository contains code to experiment with two possible approaches to scal
 
 2. <a href="http://openbigdatagroup.github.io/plda/">Parallel Latent Dirichlet Allocation</a>
 
-<b>Paper:</b> PLDA+: Parallel Latent Dirichlet Allocation with Data Placement and Pipeline Processing. Zhiyuan Liu, Yuzhou Zhang, Edward Y. Chang, Maosong Sun. ACM Transactions on Intelligent Systems and Technology, special issue on Large Scale Machine Learning. 2011.
+<BLOCKQUOTE><b>Papers:</b>
+<ul><li></b> PLDA+: Parallel Latent Dirichlet Allocation with Data Placement and Pipeline Processing. Zhiyuan Liu, Yuzhou Zhang, Edward Y. Chang, Maosong Sun. ACM Transactions on Intelligent Systems and Technology, special issue on Large Scale Machine Learning. 2011.</li>
+<li>PLDA: Parallel Latent Dirichlet Allocation for Large-scale Applications. Yi Wang, Hongjie Bai, Matt Stanton, Wen-Yen Chen, and Edward Y. Chang. AAIM 2009.</li>
+</BLOCKQUOTE>
 
 <h2>Prerequisites</h2>
 
