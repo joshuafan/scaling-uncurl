@@ -42,3 +42,9 @@ To my knowledge, PLDA needs to be run on Linux.
 To run Julia NMF: uncomment "Pkg.add()" statements the first time. If desired, adjust how the data matrix is initialized, and edit the file name of the PLDA file generated from the data. Then, "julia nmf.jl" can be run.
 
 To run PLDA: Make sure the input file has been created (using nmf.jl first). Then, follow <a href="http://openbigdatagroup.github.io/plda/"> these instructions</a> to run PLDA. (Remember to adjust the number of topics and the input/output file names.) Finally, make sure that the file names referenced in "plda.jl" are correct, and run "julia plda.jl".
+
+Example PLDA commands (in order):
+
+`mpiexec -n 5 ./mpi_lda --num_topics 2 --alpha 0.1 --beta 0.01 --training_data_file ../data/linear_input.txt --model_file /tmp/linear_model.txt --total_iterations 150`
+
+`./infer --alpha 0.1 --beta 0.01 --inference_data_file ../data/linear_input.txt --inference_result_file /tmp/linear_result.txt --model_file /tmp/linear_model.txt --total_iterations 50 --burn_in_iterations 20`
